@@ -16,7 +16,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: docker-compose -f docker-compose-build.yaml build --parallel
+    - run: docker --version # print the version for logging
+    - run: docker build -t udagram-frontend ./udagram-frontend
+    - run: docker build -t udagram-api-user ./udagram-api-user
+    - run: docker build -t udagram-api-feed ./udagram-api-feed
+    - run: docker build -t udagram-reverseproxy ./udagram-reverseproxy
+    #- run: docker-compose -f docker-compose-build.yaml build --parallel
     - run: docker tag udagram-frontend zacchaeusayanniran/udagram-frontend:v1 #tagging
     - run: docker tag udagram-api-user zacchaeusayanniran/udagram-api-user:v1
     - run: docker tag udagram-api-feed zacchaeusayanniran/udagram-api-feed:v1
