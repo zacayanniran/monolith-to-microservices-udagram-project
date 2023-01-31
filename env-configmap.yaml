@@ -4,9 +4,9 @@ metadata:
   name: env-config
 data:
   AWS_REGION: us-east-1
-  POSTGRES_HOST: zac-db.cwbyuxmd60un.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: zac-dev.c9x3r3h1sdal.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
-  AWS_BUCKET: zacc-project-dev
+  AWS_BUCKET: zac-project-dev
   AWS_PROFILE: default
   JWT_SECRET: testing
   URL: https://b42425e07f1ed33d711e62f2163ed7b1.gr7.us-east-1.eks.amazonaws.com
