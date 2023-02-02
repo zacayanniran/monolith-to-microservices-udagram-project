@@ -9,4 +9,5 @@ data:
   AWS_BUCKET: zac-project-dev
   AWS_PROFILE: default
   JWT_SECRET: testing
-  PORT: "8080"
+  URL: https://1A34E8D6D83FE609F911D5B98A1FD41D.gr7.us-east-1.eks.amazonaws.com
+  #PORT: "8080"
