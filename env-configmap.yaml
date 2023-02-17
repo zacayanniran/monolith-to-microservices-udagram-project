@@ -3,11 +3,12 @@ kind: ConfigMap
 metadata:
   name: env-config
 data:
-  #AWS_REGION: us-east-1
-  POSTGRES_HOST: localhost
+  AWS_REGION: us-east-1
+  POSTGRES_HOST: zac-dev.cwbyuxmd60un.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
-  #AWS_BUCKET: zac-project-dev
-  #AWS_PROFILE: default
+  
+  AWS_BUCKET: zac-dev
+  AWS_PROFILE: default
   JWT_SECRET: testing
   #URL: https://1A34E8D6D83FE609F911D5B98A1FD41D.gr7.us-east-1.eks.amazonaws.com
   PORT: "8080"
