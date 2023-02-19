@@ -22,12 +22,12 @@ jobs:
     - run: docker build -t udagram-api-feed ./udagram-api-feed
     - run: docker build -t udagram-reverseproxy ./udagram-reverseproxy
     #- run: docker-compose -f docker-compose-build.yaml build --parallel
-    - run: docker tag udagram-frontend zacchaeusayanniran/udagram-frontend:v1 #tagging
+    - run: docker tag udagram-frontend zacchaeusayanniran/udagram-frontend:v5 #tagging
     - run: docker tag udagram-api-user zacchaeusayanniran/udagram-api-user:v1
     - run: docker tag udagram-api-feed zacchaeusayanniran/udagram-api-feed:v1
     - run: docker tag udagram-reverseproxy zacchaeusayanniran/udagram-reverseproxy:v1
     - run: echo "${{secrets.DOCKER_PASSWORD}}" | docker login -u "${{secrets.DOCKER_USERNAME}}" --password-stdin
-    - run: docker push zacchaeusayanniran/udagram-frontend:v1
+    - run: docker push zacchaeusayanniran/udagram-frontend:v5
     - run: docker push zacchaeusayanniran/udagram-api-user:v1
     - run: docker push zacchaeusayanniran/udagram-api-feed:v1
     - run: docker push zacchaeusayanniran/udagram-reverseproxy:v1
