@@ -15,7 +15,7 @@ spec:
         service: backend-user
     spec:
       containers:
-      - image: docker.io/zacchaeusayanniran/udagram-api-user:v2
+      - image: docker.io/zacchaeusayanniran/udagram-api-user:v1
         name: backend-user
         imagePullPolicy: Always
         ports:
